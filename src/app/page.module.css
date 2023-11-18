@@ -1,0 +1,168 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  background-position-x: center;
+  background-size: cover;
+  z-index: -99;
+  overflow: hidden;
+  background-image: url("/images/background.png");
+}
+
+.background span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 3px;
+  background: #fff;
+  border-radius: 50%;
+  box-sizing: 0 0 0 2px rgba(255, 255, 255 0.1),
+      0 0 0 8px rgba(255, 255, 255, 0.1),
+      0 0 10px rgba(255, 255, 255, 1);
+  animation: shootingStars 3s linear infinite;
+  z-index: -99;
+}
+
+.background span:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+
+@keyframes shootingStars {
+  0% {
+      transform: rotate(315deg) translateX(0);
+      opacity: 0;
+  }
+
+  30% {
+      opacity: 1;
+  }
+
+  80% {
+      opacity: 1;
+  }
+
+  100% {
+      transform: rotate(315deg) translateX(-1000px);
+      opacity: 0;
+  }
+}
+
+.background span:nth-child(1) {
+  top: 0;
+  right: 0;
+  left: initial;
+  animation-delay: 0;
+  animation-duration: 1s;
+}
+
+.background span:nth-child(2) {
+  top: 0px;
+  right: 80px;
+  left: initial;
+  animation-delay: 0.2s;
+  animation-duration: 3s;
+}
+
+.background span:nth-child(3) {
+  top: 80px;
+  right: 0px;
+  left: initial;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
+}
+
+.background span:nth-child(4) {
+  top: 0px;
+  right: 100px;
+  left: initial;
+  animation-delay: 0.6s;
+  animation-duration: 1.5s;
+}
+
+.background span:nth-child(5) {
+  top: 0px;
+  right: 400px;
+  left: initial;
+  animation-delay: 0.8s;
+  animation-duration: 2.5s;
+}
+
+.background span:nth-child(6) {
+  top: 0px;
+  right: 600px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+
+.background span:nth-child(7) {
+  top: 300px;
+  right: 0px;
+  left: initial;
+  animation-delay: 1.2s;
+  animation-duration: 1.75s;
+}
+
+.background span:nth-child(8) {
+  top: 0px;
+  right: 700px;
+  left: initial;
+  animation-delay: 1.4s;
+  animation-duration: 1.25s;
+}
+
+.background span:nth-child(9) {
+  top: 0px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 0.75s;
+  animation-duration: 2.25s;
+}
+
+.background span:nth-child(10) {
+  top: 0px;
+  right: 450px;
+  left: initial;
+  animation-delay: 2.75s;
+  animation-duration: 2.25s;
+}
+
+.section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 25vh;
+  max-width: 960px;
+  text-align: center;
+}
+
+.section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-family: 'Mulish', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #fff;
+}

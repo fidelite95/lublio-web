@@ -1,0 +1,78 @@
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade_1 {
+    animation-name: fade;
+}
+
+.fade_2 {
+    animation-name: fade;
+    animation-delay: 0.2s;
+}
+
+.fade_3 {
+    animation-name: fade;
+    animation-delay: 0.4s;
+}
+
+.fade_4 {
+    animation-name: fade;
+    animation-delay: 0.6s;
+}
+
+.fade_5 {
+    animation-name: fade;
+    animation-delay: 0.8s;
+}
+
+.fade_6 {
+    animation-name: fade;
+    animation-delay: 1s;
+}
+
+.fade_7 {
+    animation-name: fade;
+    animation-delay: 1.2s;
+}
+
+.fade_8 {
+    animation-name: fade;
+    animation-delay: 1.4s;
+}
+
+.fade_9 {
+    animation-name: fade;
+    animation-delay: 1.6s;
+}
+
+.fade_10 {
+    animation-name: fade;
+    animation-delay: 1.8s;
+}
+
+.fade_11 {
+    animation-name: fade;
+    animation-delay: 2s;
+}
+
+.fade_12 {
+    animation-name: fade;
+    animation-delay: 2.2s;
+}
+
+.fade_13 {
+    animation-name: fade;
+    animation-delay: 2.4s;
+}
