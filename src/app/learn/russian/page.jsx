@@ -3,24 +3,24 @@ import '@/app/util/transition.css';
 import styles from './page.module.css';
 import Link from 'next/link';
 
-export default function English () {
+export default function Russian () {
   return (
     <main className={`${styles.main} animated fade_1`}>
       <div className={styles.wrapper}>
         <Card
-          url="/learn/english/beginner"
+          url="/learn/russian/beginner"
           image="/images/learning1.png"
           title="Start From Scratch"
           desc="Learn basic expressions and vocabulary"
         />
         <Card
-          url="/learn/english/vocabulary"
+          url="/learn/russian/vocabulary"
           image="/images/learning2.png"
           title="Vocabulary"
           desc="Expand your vocabulary to communicate better"
         />
         <Card
-          url="/learn/english/grammar"
+          url="/learn/russian/grammar"
           image="/images/learning3.png"
           title="Grammar"
           desc="Conquer the language strategically"
