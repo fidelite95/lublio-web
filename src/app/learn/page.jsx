@@ -7,7 +7,7 @@ export default function Learn () {
     <main className={`${styles.main} animated fade_1`}>
       <div className={styles.wrapper}>
         <Card
-          url="/learn/french"
+          url="/learn/english"
           background="/images/learn_eng.png"
           language="ENGLISH"
           title="EMBARK ON A LINGUISTIC ADVENTURE LIKE NO OTHER"
@@ -30,7 +30,7 @@ export default function Learn () {
           language="РУССКИЙ"
           title="ОТПРАВИТЬСЯ В БЕСПРЕЦЕДЕНТНОЕ ЛИНГВИСТИЧЕСКОЕ ПРИКЛЮЧЕНИЕ"
         />
-        {/* <Card
+        <Card
           url="/learn/spanish"
           background="/images/learn_esp.png"
           language="ESPAÑOL"
@@ -46,9 +46,17 @@ export default function Learn () {
           url="/learn/turkish"
           background="/images/learn_tur.png"
           language="TÜRKÇE"
-          title="BENZERI GÖRÜLMEMIŞ BIR DIL MACERASINA ATILIN"
+          title="BENZERİ GÖRÜLMEMİŞ BİR DİL MACERASINA ATILIN"
         />
-        <Card
+        {/* Hebrew */}
+        <div className={styles.card}>
+          <Link href="/learn/hebrew">
+            <img src="/images/learn_heb.png" />
+            <h1 style={{fontFamily: 'Noto Sans Hebrew, sans-serif'}}>עברית</h1>
+            <h2 style={{fontFamily: 'Noto Sans Hebrew, sans-serif'}}>צאו להרפתקה לשונית שאין דומה לה</h2>
+          </Link>
+        </div>
+        {/* <Card
           url="/learn/bulgarian"
           background="/images/learn_bul.png"
           language="БЪЛГАРСКИ"

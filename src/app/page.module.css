@@ -23,13 +23,14 @@
   left: 50%;
   width: 3px;
   height: 3px;
-  background: #fff;
+  background: #fafafa;
   border-radius: 50%;
   box-sizing: 0 0 0 2px rgba(255, 255, 255 0.1),
       0 0 0 8px rgba(255, 255, 255, 0.1),
       0 0 10px rgba(255, 255, 255, 1);
   animation: shootingStars 3s linear infinite;
   z-index: -99;
+  opacity: 0;
 }
 
 .background span:before {
@@ -39,7 +40,7 @@
   transform: translateY(-50%);
   width: 300px;
   height: 1px;
-  background: linear-gradient(90deg, #fff, transparent);
+  background: linear-gradient(90deg, #fafafa, transparent);
 }
 
 @keyframes shootingStars {
@@ -63,8 +64,8 @@
 }
 
 .background span:nth-child(1) {
-  top: 0;
-  right: 0;
+  top: 0px;
+  right: 0px;
   left: initial;
   animation-delay: 0;
   animation-duration: 1s;
