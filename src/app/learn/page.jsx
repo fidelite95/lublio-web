@@ -6,12 +6,12 @@ export default function Learn () {
   return (
     <main className={`${styles.main} animated fade_1`}>
       <div className={styles.wrapper}>
-        <Card
+        {/* <Card
           url="/learn/english"
           background="/images/learn_eng.png"
           language="ENGLISH"
           title="EMBARK ON A LINGUISTIC ADVENTURE LIKE NO OTHER"
-        />
+        /> */}
         <Card
           url="/learn/french"
           background="/images/learn_fra.png"
@@ -25,10 +25,10 @@ export default function Learn () {
           title="SICH AUF EIN SPRACHLICHES ABENTEUER WIE KEIN ANDERES EINLASSEN"
         />
         <Card
-          url="/learn/russian"
-          background="/images/learn_rus.png"
-          language="РУССКИЙ"
-          title="ОТПРАВИТЬСЯ В БЕСПРЕЦЕДЕНТНОЕ ЛИНГВИСТИЧЕСКОЕ ПРИКЛЮЧЕНИЕ"
+          url="/learn/italian"
+          background="/images/learn_ita.png"
+          language="ITALIANO"
+          title="IMBARCARSI IN UN'AVVENTURA LINGUISTICA SENZA PRECEDENTI"
         />
         {/* <Card
           url="/learn/spanish"
@@ -37,10 +37,10 @@ export default function Learn () {
           title="EMBARCARSE EN UNA AVENTURA LINGÜÍSTICA SIN PRECEDENTES"
         />
         <Card
-          url="/learn/italian"
-          background="/images/learn_ita.png"
-          language="ITALIANO"
-          title="IMBARCARSI IN UN'AVVENTURA LINGUISTICA SENZA PRECEDENTI"
+          url="/learn/russian"
+          background="/images/learn_rus.png"
+          language="РУССКИЙ"
+          title="ОТПРАВИТЬСЯ В БЕСПРЕЦЕДЕНТНОЕ ЛИНГВИСТИЧЕСКОЕ ПРИКЛЮЧЕНИЕ"
         />
         <Card
           url="/learn/turkish"
