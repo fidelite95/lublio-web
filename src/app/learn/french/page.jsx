@@ -7,6 +7,10 @@ export default function French () {
   return (
     <main className={`${styles.main} animated fade_1`}>
       <div className={styles.wrapper}>
+        <div className={styles.title}>
+          <h1>Français</h1>
+          <h2>Embarquez pour une aventure linguistique sans précédent</h2>
+        </div>
         <Card
           url="/learn/french/beginner"
           image="/images/learning1.png"
@@ -20,9 +24,9 @@ export default function French () {
           desc="Expand your vocabulary to communicate better"
         />
         <Card
-          url="/learn/french/grammar"
+          url="/learn/french/pattern"
           image="/images/learning3.png"
-          title="Grammar"
+          title="Pattern"
           desc="Conquer the language strategically"
         />
       </div>

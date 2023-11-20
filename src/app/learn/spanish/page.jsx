@@ -3,26 +3,30 @@ import '@/app/util/transition.css';
 import styles from './page.module.css';
 import Link from 'next/link';
 
-export default function English () {
+export default function Spanish () {
   return (
     <main className={`${styles.main} animated fade_1`}>
       <div className={styles.wrapper}>
+        <div className={styles.title}>
+          <h1>Español</h1>
+          <h2>Embárquese en una aventura lingüística sin igual</h2>
+        </div>
         <Card
-          url="/learn/english/beginner"
+          url="/learn/spanish/beginner"
           image="/images/learning1.png"
           title="Start From Scratch"
           desc="Learn basic expressions and vocabulary"
         />
         <Card
-          url="/learn/english/vocabulary"
+          url="/learn/spanish/vocabulary"
           image="/images/learning2.png"
           title="Vocabulary"
           desc="Expand your vocabulary to communicate better"
         />
         <Card
-          url="/learn/english/grammar"
+          url="/learn/spanish/pattern"
           image="/images/learning3.png"
-          title="Grammar"
+          title="Pattern"
           desc="Conquer the language strategically"
         />
       </div>

@@ -6,67 +6,41 @@ export default function Learn () {
   return (
     <main className={`${styles.main} animated fade_1`}>
       <div className={styles.wrapper}>
-        {/* <Card
-          url="/learn/english"
-          background="/images/learn_eng.png"
-          language="ENGLISH"
-          title="EMBARK ON A LINGUISTIC ADVENTURE LIKE NO OTHER"
-        /> */}
         <Card
           url="/learn/french"
           background="/images/learn_fra.png"
           language="FRANÇAIS"
-          title="SE LANCER DANS UNE AVENTURE LINGUISTIQUE SANS PRÉCÉDENT"
+          title="Embarquez pour une aventure linguistique sans précédent"
         />
         <Card
           url="/learn/german"
           background="/images/learn_deu.png"
           language="DEUTSCH"
-          title="SICH AUF EIN SPRACHLICHES ABENTEUER WIE KEIN ANDERES EINLASSEN"
+          title="Begeben Sie sich auf ein sprachliches Abenteuer wie kein anderes"
         />
         <Card
-          url="/learn/italian"
-          background="/images/learn_ita.png"
-          language="ITALIANO"
-          title="IMBARCARSI IN UN'AVVENTURA LINGUISTICA SENZA PRECEDENTI"
-        />
-        {/* <Card
           url="/learn/spanish"
           background="/images/learn_esp.png"
           language="ESPAÑOL"
-          title="EMBARCARSE EN UNA AVENTURA LINGÜÍSTICA SIN PRECEDENTES"
+          title="Embárquese en una aventura lingüística sin igual"
+        />
+        {/* <Card
+          url="/learn/italian"
+          background="/images/learn_ita.png"
+          language="ITALIANO"
+          title="Intraprendete un'avventura linguistica senza precedenti"
         />
         <Card
           url="/learn/russian"
           background="/images/learn_rus.png"
           language="РУССКИЙ"
-          title="ОТПРАВИТЬСЯ В БЕСПРЕЦЕДЕНТНОЕ ЛИНГВИСТИЧЕСКОЕ ПРИКЛЮЧЕНИЕ"
+          title="Отправиться в беспрецедентное лингвистическое приключение"
         />
         <Card
           url="/learn/turkish"
           background="/images/learn_tur.png"
           language="TÜRKÇE"
-          title="BENZERİ GÖRÜLMEMİŞ BİR DİL MACERASINA ATILIN"
-        /> */}
-        {/* Hebrew */}
-        {/* <div className={styles.card}>
-          <Link href="/learn/hebrew">
-            <img src="/images/learn_heb.png" />
-            <h1 style={{fontFamily: 'Noto Sans Hebrew, sans-serif'}}>עברית</h1>
-            <h2 style={{fontFamily: 'Noto Sans Hebrew, sans-serif'}}>צאו להרפתקה לשונית שאין דומה לה</h2>
-          </Link>
-        </div> */}
-        {/* <Card
-          url="/learn/bulgarian"
-          background="/images/learn_bul.png"
-          language="БЪЛГАРСКИ"
-          title="ДА СЕ ВПУСНЕТЕ В ЛИНГВИСТИЧНО ПРИКЛЮЧЕНИЕ КАТО НИКОЕ ДРУГО"
-        />
-        <Card
-          url="/learn/greek"
-          background="/images/learn_gre.png"
-          language="ΕΛΛΗΝΙΚΑ"
-          title="ΞΕΚΙΝΉΣΤΕ ΜΙΑ ΓΛΩΣΣΙΚΉ ΠΕΡΙΠΈΤΕΙΑ ΠΟΥ ΔΕΝ ΜΟΙΆΖΕΙ ΜΕ ΚΑΜΊΑ ΆΛΛΗ"
+          title="Eşi benzeri görülmemiş bir dilsel maceraya atılın"
         /> */}
       </div>
     </main>

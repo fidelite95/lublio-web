@@ -7,6 +7,10 @@ export default function German () {
   return (
     <main className={`${styles.main} animated fade_1`}>
       <div className={styles.wrapper}>
+        <div className={styles.title}>
+          <h1>Deutsch</h1>
+          <h2>Begeben Sie sich auf ein sprachliches Abenteuer wie kein anderes</h2>
+        </div>
         <Card
           url="/learn/german/beginner"
           image="/images/learning1.png"
@@ -20,9 +24,9 @@ export default function German () {
           desc="Expand your vocabulary to communicate better"
         />
         <Card
-          url="/learn/german/grammar"
+          url="/learn/german/pattern"
           image="/images/learning3.png"
-          title="Grammar"
+          title="Pattern"
           desc="Conquer the language strategically"
         />
       </div>
