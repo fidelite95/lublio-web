@@ -4,31 +4,49 @@ import styles from './page.module.css';
 import Link from 'next/link';
 
 export default function French () {
+  const levels = [
+    {
+      level_code: 'rookie',
+      level_title: 'Rookie',
+      desc: 'Start your journey from scratch',
+      image: '/images/learn_lv1.png',
+    },
+    {
+      level_code: 'explorer',
+      level_title: 'Explorer',
+      desc: 'Expand your vocabulary to communicate better',
+      image: '/images/learn_lv2.png',
+    },
+    {
+      level_code: 'pioneer',
+      level_title: 'Pioneer',
+      desc: 'Conquer the language strategically',
+      image: '/images/learn_lv3.png',
+    },
+  ];
+
   return (
     <main className={`${styles.main} animated fade_1`}>
       <div className={styles.wrapper}>
         <div className={styles.title}>
-          <h1>Français</h1>
-          <h2>Embarquez pour une aventure linguistique sans précédent</h2>
+          <div className={styles.title_img}>
+            <img src="/images/flag_fra.png" />
+          </div>
+          <div className={styles.title_text}>
+            <h1>Français</h1>
+            <h2>Embarquez pour une aventure linguistique sans précédent</h2>
+          </div>
         </div>
-        <Card
-          url="/learn/french/beginner"
-          image="/images/learning1.png"
-          title="Start From Scratch"
-          desc="Learn basic expressions and vocabulary"
-        />
-        <Card
-          url="/learn/french/vocabulary"
-          image="/images/learning2.png"
-          title="Vocabulary"
-          desc="Expand your vocabulary to communicate better"
-        />
-        <Card
-          url="/learn/french/pattern"
-          image="/images/learning3.png"
-          title="Pattern"
-          desc="Conquer the language strategically"
-        />
+        {levels.map ((a, i) => {
+          return (
+            <Card
+              level_code={levels[i].level_code}
+              level_title={levels[i].level_title}
+              image={levels[i].image}
+              desc={levels[i].desc}
+            />
+          );
+        })}
       </div>
     </main>
   );
@@ -37,9 +55,12 @@ export default function French () {
 function Card (props) {
   return (
     <div className={styles.card}>
-      <Link href={props.url}>
+      <Link
+        href={`/learn/french/${props.level_code}`}
+        as={`/learn/french/${props.level_code}`}
+      >
         <img src={props.image} />
-        <h1>{props.title}</h1>
+        <h1>{props.level_title}</h1>
         <p>{props.desc}</p>
       </Link>
     </div>

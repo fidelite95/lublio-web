@@ -47,27 +47,29 @@
 
 .card h1 {
     position: absolute;
-    bottom: 25px;
+    bottom: 30px;
     right: 30px;
     font-family: 'Mulish', sans-serif;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 28px;
     color: #fff;
     opacity: 1;
+    letter-spacing: 12px;
+    text-transform: uppercase;
     transition: all 0.3s;
 }
 
 .card h2 {
     position: absolute;
-    top: 25px;
-    left: 30px;
+    top: 30px;
+    left: 35px;
     font-family: 'Mulish', sans-serif;
     font-weight: 800;
-    font-size: 16px;
-    width: 35%;
+    font-size: 15px;
+    width: 40%;
     opacity: 0.4;
     color: #000;
-    line-height: 28px;
+    line-height: 24px;
     letter-spacing: 10px;
     text-transform: uppercase;
 }
@@ -110,7 +112,8 @@
     }
 
     .card h2 {
-        font-size: 15px;
-        line-height: 24px;
+        font-size: 13px;
+        line-height: 20px;
+        width: 40%;
     }
 }

@@ -3,7 +3,7 @@ import '@/app/util/transition.css';
 import styles from './page.module.css';
 import Link from 'next/link';
 
-export default function German () {
+export default function English () {
   const levels = [
     {
       level_code: 'rookie',
@@ -30,13 +30,11 @@ export default function German () {
       <div className={styles.wrapper}>
         <div className={styles.title}>
           <div className={styles.title_img}>
-            <img src="/images/flag_deu.png" />
+            <img src="/images/flag_eng.png" />
           </div>
           <div className={styles.title_text}>
-            <h1>Deutsch</h1>
-            <h2>
-              Begeben Sie sich auf ein sprachliches Abenteuer wie kein anderes
-            </h2>
+            <h1>English</h1>
+            <h2>Embark on a linguistic adventure like no other</h2>
           </div>
         </div>
         {levels.map ((a, i) => {
@@ -58,8 +56,8 @@ function Card (props) {
   return (
     <div className={styles.card}>
       <Link
-        href={`/learn/german/${props.level_code}`}
-        as={`/learn/german/${props.level_code}`}
+        href={`/learn/english/${props.level_code}`}
+        as={`/learn/english/${props.level_code}`}
       >
         <img src={props.image} />
         <h1>{props.level_title}</h1>
