@@ -1,13 +1,13 @@
 import '@/app/util/transition.css';
 // import Image from 'next/image';
 import styles from './page.module.css';
-import Link from 'next/link';
-import {connectDB} from '@/app/util/database';
+// import Link from 'next/link';
+// import {connectDB} from '@/app/util/database';
 
 export default async function Rookie () {
-  const db = (await connectDB).db ('Lublio');
-  let result = await db.collection ('expression').find ().toArray ();
-  console.log (result);
+  // const db = (await connectDB).db ('Lublio');
+  // let result = await db.collection ('expression').find ().toArray ();
+  // console.log (result);
 
   return (
     <main className={`${styles.main} animated fade_1`}>
