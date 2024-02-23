@@ -5,29 +5,47 @@ import Link from 'next/link';
 export default function Learn () {
   const languages = [
     {
-      lang_code: 'english',
-      lang_title: 'English',
+      language_name: 'english',
+      language_title: 'English',
       desc: 'Embark on a linguistic adventure like no other',
       background: '/images/learn_eng.png',
     },
     {
-      lang_code: 'french',
-      lang_title: 'Français',
+      language_name: 'french',
+      language_title: 'Français',
       desc: 'Embarquez pour une aventure linguistique sans précédent',
       background: '/images/learn_fra.png',
     },
     {
-      lang_code: 'german',
-      lang_title: 'Deutsch',
+      language_name: 'german',
+      language_title: 'Deutsch',
       desc: 'Begeben Sie sich auf ein sprachliches Abenteuer wie kein anderes',
       background: '/images/learn_deu.png',
     },
     {
-      lang_code: 'spanish',
-      lang_title: 'Español',
-      desc: 'Embárquese en una aventura lingüística sin igual',
-      background: '/images/learn_esp.png',
+      language_name: 'italian',
+      language_title: 'Italiano',
+      desc: "Intraprendete un'avventura linguistica senza precedenti",
+      background: '/images/learn_ita.png',
     },
+    // {
+    //   language_name: 'spanish',
+    //   language_title: 'Español',
+    //   desc: 'Embárquese en una aventura lingüística sin igual',
+    //   background: '/images/learn_esp.png',
+    // },
+    // {
+    //   language_name: 'russian',
+    //   language_title: 'РУССКИЙ',
+    //   desc: 'Отправиться в беспрецедентное лингвистическое приключение',
+    //   background: '/images/learn_rus.png',
+    // },
+    // {
+    //   language_name: 'turkish',
+    //   language_title: 'TÜRKÇE',
+    //   desc: 'Eşi benzeri görülmemiş bir dilsel maceraya atılın',
+    //   background: '/images/learn_tur.png',
+    // },
   ];
 
   return (
@@ -36,31 +54,13 @@ export default function Learn () {
         {languages.map ((a, i) => {
           return (
             <Card
-              lang_code={languages[i].lang_code}
-              lang_title={languages[i].lang_title}
+              language_name={languages[i].language_name}
+              language_title={languages[i].language_title}
               desc={languages[i].desc}
               background={languages[i].background}
             />
           );
         })}
-        {/* <Card
-          url="/learn/italian"
-          background="/images/learn_ita.png"
-          language="ITALIANO"
-          title="Intraprendete un'avventura linguistica senza precedenti"
-        />
-        <Card
-          url="/learn/russian"
-          background="/images/learn_rus.png"
-          language="РУССКИЙ"
-          title="Отправиться в беспрецедентное лингвистическое приключение"
-        />
-        <Card
-          url="/learn/turkish"
-          background="/images/learn_tur.png"
-          language="TÜRKÇE"
-          title="Eşi benzeri görülmemiş bir dilsel maceraya atılın"
-        /> */}
       </div>
     </main>
   );
@@ -71,16 +71,17 @@ function Card (props) {
     <div className={styles.card}>
       <Link
         href={{
-          pathname: `/learn/${props.lang_code}`,
+          pathname: `/learn/${props.language_name}`,
           query: {
-            lang_code: props.lang_code,
+            language_name: props.language_name,
           },
         }}
-        as={`/learn/${props.lang_code}`}
+        as={`/learn/${props.language_name}`}
       >
         <img src={props.background} />
-        <h1>{props.lang_title}</h1>
+        <h1>{props.language_title}</h1>
         <h2>{props.desc}</h2>
+        <h3>{props.language_name}</h3>
       </Link>
     </div>
   );

@@ -5,6 +5,7 @@ import styles from './page.module.css';
 export default function About () {
   return (
     <main className={`${styles.main} animated fade_1`}>
+      <div className={styles.background} />
       <div className={styles.wrapper}>
         <section className={`${styles.about} animated fade_2`}>
           <div className={`${styles.about_logo} animated fade_3`}>

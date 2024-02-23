@@ -66,12 +66,27 @@
     font-family: 'Mulish', sans-serif;
     font-weight: 800;
     font-size: 15px;
-    width: 40%;
+    width: 30%;
     opacity: 0.4;
     color: #000;
     line-height: 24px;
     letter-spacing: 10px;
     text-transform: uppercase;
+}
+
+
+.card h3 {
+    position: absolute;
+    bottom: 70px;
+    right: 31px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.4;
+    color: #000;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    transition: all 0.3s;
 }
 
 .card:active {
@@ -88,6 +103,11 @@
 }
 
 .card:active h2 {
+    color: #fff;
+    opacity: 1;
+}
+
+.card:active h3 {
     color: #fff;
     opacity: 1;
 }
