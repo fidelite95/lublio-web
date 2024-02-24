@@ -6,22 +6,79 @@ import Link from 'next/link';
 export default function German () {
   const levels = [
     {
-      level_code: 'rookie',
-      level_title: 'Rookie',
-      desc: 'Start your journey from scratch',
-      image: '/images/learn_lv1.png',
+      number: '1',
+      title: 'Basic Expressions',
+      desc: 'Try to learn basic expressions',
     },
     {
-      level_code: 'explorer',
-      level_title: 'Explorer',
-      desc: 'Expand your vocabulary to communicate better',
-      image: '/images/learn_lv2.png',
+      number: '2',
+      title: 'Numbers',
+      desc: 'Numbers from zero to one trillion',
     },
     {
-      level_code: 'pioneer',
-      level_title: 'Pioneer',
-      desc: 'Conquer the language strategically',
-      image: '/images/learn_lv3.png',
+      number: '3',
+      title: 'Time',
+      desc: 'Day and night, Seasons',
+    },
+    {
+      number: '4',
+      title: 'Calendar',
+      desc: 'Days of the week, Months of the year',
+    },
+    {
+      number: '5',
+      title: 'Family',
+      desc: 'Family members',
+    },
+    {
+      number: '6',
+      title: 'Body Ⅰ',
+      desc: 'Body parts, Face, Hand, Foot',
+    },
+    {
+      number: '7',
+      title: 'Body Ⅱ',
+      desc: 'Muscles, Skeleton, Internal Organs',
+    },
+    {
+      number: '8',
+      title: 'Colors',
+      desc: 'Various colors',
+    },
+    {
+      number: '9',
+      title: 'Clothes',
+      desc: "Men's clothing, Women's clothing, Accessories",
+    },
+    {
+      number: '10',
+      title: 'Food',
+      desc: 'Meat, Fish, Vegetables, Fruits, Drinks',
+    },
+    {
+      number: '11',
+      title: 'Transportation',
+      desc: 'Roads, Bus, Train, Ship, Airline',
+    },
+    {
+      number: '12',
+      title: 'Home',
+      desc: 'House, Home appliances, Gardening',
+    },
+    {
+      number: '13',
+      title: 'Health',
+      desc: 'Ilness, Hospital',
+    },
+    {
+      number: '14',
+      title: 'Environment Ⅰ',
+      desc: 'Landscape, Weather, Earth, Space',
+    },
+    {
+      number: '15',
+      title: 'Environment Ⅱ',
+      desc: 'Animals, Plants',
     },
   ];
 
@@ -29,9 +86,6 @@ export default function German () {
     <main className={`${styles.main} animated fade_1`}>
       <div className={styles.wrapper}>
         <div className={styles.title}>
-          <div className={styles.title_img}>
-            <img src="/images/flag_deu.png" />
-          </div>
           <div className={styles.title_text}>
             <h1>Deutsch</h1>
             <h2>
@@ -42,8 +96,8 @@ export default function German () {
         {levels.map ((a, i) => {
           return (
             <Card
-              level_code={levels[i].level_code}
-              level_title={levels[i].level_title}
+              number={levels[i].number}
+              title={levels[i].title}
               image={levels[i].image}
               desc={levels[i].desc}
             />
@@ -58,11 +112,11 @@ function Card (props) {
   return (
     <div className={styles.card}>
       <Link
-        href={`/learn/german/${props.level_code}`}
-        as={`/learn/german/${props.level_code}`}
+        href={`/learn/German/${props.number}`}
+        as={`/learn/German/${props.number}`}
       >
-        <img src={props.image} />
-        <h1>{props.level_title}</h1>
+        <h1 className={styles.card_number}>{props.number}</h1>
+        <h1>{props.title}</h1>
         <p>{props.desc}</p>
       </Link>
     </div>

@@ -23,10 +23,10 @@ export default function Learn () {
       background: '/images/learn_deu.png',
     },
     {
-      language_name: 'italian',
-      language_title: 'Italiano',
-      desc: "Intraprendete un'avventura linguistica senza precedenti",
-      background: '/images/learn_ita.png',
+      language_name: 'russian',
+      language_title: 'Русский',
+      desc: 'Отправиться в беспрецедентное лингвистическое приключение',
+      background: '/images/learn_rus.png',
     },
     // {
     //   language_name: 'spanish',
@@ -35,10 +35,10 @@ export default function Learn () {
     //   background: '/images/learn_esp.png',
     // },
     // {
-    //   language_name: 'russian',
-    //   language_title: 'РУССКИЙ',
-    //   desc: 'Отправиться в беспрецедентное лингвистическое приключение',
-    //   background: '/images/learn_rus.png',
+    //   language_name: 'italian',
+    //   language_title: 'Italiano',
+    //   desc: "Intraprendete un'avventura linguistica senza precedenti",
+    //   background: '/images/learn_ita.png',
     // },
     // {
     //   language_name: 'turkish',

@@ -3,7 +3,7 @@ import '@/app/util/transition.css';
 import styles from './page.module.css';
 import Link from 'next/link';
 
-export default function English () {
+export default function Russian () {
   const levels = [
     {
       number: '1',
@@ -48,7 +48,7 @@ export default function English () {
     {
       number: '9',
       title: 'Clothes',
-      desc: 'Men\'s clothing, Women\'s clothing, Accessories',
+      desc: "Men's clothing, Women's clothing, Accessories",
     },
     {
       number: '10',
@@ -87,8 +87,8 @@ export default function English () {
       <div className={styles.wrapper}>
         <div className={styles.title}>
           <div className={styles.title_text}>
-            <h1>English</h1>
-            <h2>Embark on a linguistic adventure like no other</h2>
+            <h1>Русский</h1>
+            <h2>Отправиться в беспрецедентное лингвистическое приключение</h2>
           </div>
         </div>
         {levels.map ((a, i) => {
@@ -110,8 +110,8 @@ function Card (props) {
   return (
     <div className={styles.card}>
       <Link
-        href={`/learn/english/${props.number}`}
-        as={`/learn/english/${props.number}`}
+        href={`/learn/russian/${props.number}`}
+        as={`/learn/russian/${props.number}`}
       >
         <h1 className={styles.card_number}>{props.number}</h1>
         <h1>{props.title}</h1>
