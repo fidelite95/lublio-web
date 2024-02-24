@@ -4,81 +4,81 @@ import styles from './page.module.css';
 import Link from 'next/link';
 
 export default function French () {
-  const levels = [
+  const chapters = [
     {
       number: '1',
-      title: 'Basic Expressions',
-      desc: 'Try to learn basic expressions',
+      title: 'Les expressions de base',
+      desc: '기초적인 표현',
     },
     {
       number: '2',
-      title: 'Numbers',
-      desc: 'Numbers from zero to one trillion',
+      title: 'Les nombres',
+      desc: '숫자',
     },
     {
       number: '3',
-      title: 'Time',
-      desc: 'Day and night, Seasons',
+      title: 'L\'heure',
+      desc: '낮과 밤, 계절',
     },
     {
       number: '4',
-      title: 'Calendar',
-      desc: 'Days of the week, Months of the year',
+      title: 'Le calendrier',
+      desc: '요일, 월, 년',
     },
     {
       number: '5',
-      title: 'Family',
-      desc: 'Family members',
+      title: 'La famille',
+      desc: '가족',
     },
     {
       number: '6',
-      title: 'Body Ⅰ',
-      desc: 'Body parts, Face, Hand, Foot',
+      title: 'Le corps Ⅰ',
+      desc: '신체 1',
     },
     {
       number: '7',
-      title: 'Body Ⅱ',
-      desc: 'Muscles, Skeleton, Internal Organs',
+      title: 'Le corps Ⅱ',
+      desc: '신체 2',
     },
     {
       number: '8',
-      title: 'Colors',
-      desc: 'Various colors',
+      title: 'Les couleurs',
+      desc: '색상',
     },
     {
       number: '9',
-      title: 'Clothes',
-      desc: "Men's clothing, Women's clothing, Accessories",
+      title: 'Les vêtements',
+      desc: "옷",
     },
     {
       number: '10',
-      title: 'Food',
-      desc: 'Meat, Fish, Vegetables, Fruits, Drinks',
+      title: 'La nourriture',
+      desc: '음식',
     },
     {
       number: '11',
-      title: 'Transportation',
-      desc: 'Roads, Bus, Train, Ship, Airline',
+      title: 'Les transports',
+      desc: '교통',
     },
     {
       number: '12',
-      title: 'Home',
-      desc: 'House, Home appliances, Gardening',
+      title: 'La maison',
+      desc: '집',
     },
     {
       number: '13',
-      title: 'Health',
-      desc: 'Ilness, Hospital',
+      title: 'La santé',
+      desc: '건강',
     },
     {
       number: '14',
-      title: 'Environment Ⅰ',
-      desc: 'Landscape, Weather, Earth, Space',
+      title: 'L\'environnement Ⅰ',
+      desc: '자연 1',
     },
     {
       number: '15',
-      title: 'Environment Ⅱ',
-      desc: 'Animals, Plants',
+      title: 'L\'environnement Ⅱ',
+      desc: '자연 2',
     },
   ];
 
@@ -91,13 +91,13 @@ export default function French () {
             <h2>Embarquez pour une aventure linguistique sans précédent</h2>
           </div>
         </div>
-        {levels.map ((a, i) => {
+        {chapters.map ((a, i) => {
           return (
             <Card
-              number={levels[i].number}
-              title={levels[i].title}
-              image={levels[i].image}
-              desc={levels[i].desc}
+              number={chapters[i].number}
+              title={chapters[i].title}
+              image={chapters[i].image}
+              desc={chapters[i].desc}
             />
           );
         })}
