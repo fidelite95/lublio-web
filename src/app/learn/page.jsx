@@ -25,13 +25,13 @@ export default function Learn () {
       desc: 'Begeben Sie sich auf ein sprachliches Abenteuer wie kein anderes',
       background: '/images/learn_deu.png',
     },
-    {
-      name: '이탈리아어',
-      link: 'italian',
-      title: 'Italiano',
-      desc: "Intraprendete un'avventura linguistica senza precedenti",
-      background: '/images/learn_ita.png',
-    },
+    // {
+    //   name: '이탈리아어',
+    //   link: 'italian',
+    //   title: 'Italiano',
+    //   desc: "Intraprendete un'avventura linguistica senza precedenti",
+    //   background: '/images/learn_ita.png',
+    // },
     // {
     //   name: '러시아어',
     //   link: 'russian',

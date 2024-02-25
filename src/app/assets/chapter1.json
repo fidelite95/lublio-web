@@ -1,0 +1,122 @@
+[
+    {
+        "idx": 1,
+        "kor": "안녕하세요.",
+        "eng": "Hello.",
+        "fra": "Bonjour.",
+        "deu": "Hallo.",
+        "rus": ""
+    },
+    {
+        "idx": 2,
+        "kor": "부탁드려요.",
+        "eng": "Please.",
+        "fra": "S'il vous plaît.",
+        "deu": "Bitte.",
+        "rus": ""
+    },
+    {
+        "idx": 3,
+        "kor": "감사해요.",
+        "eng": "Thank you.",
+        "fra": "Merci.",
+        "deu": "Danke.",
+        "rus": ""
+    },
+    {
+        "idx": 4,
+        "kor": "천만에요.",
+        "eng": "You're welcome.",
+        "fra": "De rien.",
+        "deu": "Gern geschehen.",
+        "rus": ""
+    },
+    {
+        "idx": 5,
+        "kor": "이해가 안돼요.",
+        "eng": "I don't understand.",
+        "fra": "Je ne comprends pas.",
+        "deu": "Ich verstehe nicht.",
+        "rus": ""
+    },
+    {
+        "idx": 6,
+        "kor": "모르겠어요.",
+        "eng": "I don't know.",
+        "fra": "Je ne sais pas.",
+        "deu": "Ich weiß nicht.",
+        "rus": ""
+    },
+    {
+        "idx": 7,
+        "kor": "다시 말씀해주실 수 있나요?",
+        "eng": "Can you repeat that please?",
+        "fra": "Pourriez-vous répéter, s'il vous plaît?",
+        "deu": "Können Sie das bitte wiederholen?",
+        "rus": ""
+    },
+    {
+        "idx": 8,
+        "kor": "조금 천천히 말씀해주세요.",
+        "eng": "Please speak more slowly.",
+        "fra": "Parlez plus lentement, s'il vous plaît.",
+        "deu": "Sprechen Sie bitte langsamer.",
+        "rus": ""
+    },
+    {
+        "idx": 9,
+        "kor": "화장실은 어디인가요?",
+        "eng": "Where are the restrooms?",
+        "fra": "Où sont les toilettes?",
+        "deu": "Wo sind die Toiletten?",
+        "rus": ""
+    },
+    {
+        "idx": 10,
+        "kor": "죄송해요.",
+        "eng": "I'm sorry.",
+        "fra": "Je suis désolé.",
+        "deu": "Entschuldigung.",
+        "rus": ""
+    },
+    {
+        "idx": 11,
+        "kor": "실례합니다.",
+        "eng": "Excuse me.",
+        "fra": "Excusez-moi.",
+        "deu": "Entschuldigen Sie bitte.",
+        "rus": ""
+    },
+    {
+        "idx": 12,
+        "kor": "얼마에요?",
+        "eng": "How much does it cost?",
+        "fra": "Combien ça coûte?",
+        "deu": "Wieviel kostet das?",
+        "rus": ""
+    },
+    {
+        "idx": 13,
+        "kor": "맥주 한 잔 주세요.",
+        "eng": "I'd like a beer, please.",
+        "fra": "Je voudrais une bière, s'il vous plaît.",
+        "deu": "Ich hätte gern ein Bier, bitte.",
+        "rus": ""
+    },
+    {
+        "idx": 14,
+        "kor": "콜라 두 잔 주세요.",
+        "eng": "Two cokes, please.",
+        "fra": "Deux cocas, s'il vous plaît.",
+        "deu": "Zwei Cola, bitte.",
+        "rus": ""
+    },
+    {
+        "idx": 15,
+        "kor": "안녕히 계세요.",
+        "eng": "Goodbye.",
+        "fra": "Au revoir.",
+        "deu": "Auf Wiedersehen.",
+        "rus": ""
+    }
+]
