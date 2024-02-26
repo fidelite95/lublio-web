@@ -55,37 +55,29 @@
     padding: 20px;
 }
 
-.section .answer ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-}
-
-.section .answer ul li {
+.section .answer .options {
     border-radius: 10px;
     border: 1px solid #555;
     background: linear-gradient(to right, #101010, #191919);
     padding: 15px;
     margin-bottom: 20px;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.section .answer ul li:hover {
-    border-radius: 20px;
-}
-
-.section .answer ul li:active {
-    border-radius: 30px;
-    box-shadow: 0 0 5px 1px #555 inset;
-}
-
-.section .answer ul li p {
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
     color: #fafafa;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.section .answer .options:hover {
+    border-radius: 20px;
+}
+
+.section .answer .options:active {
+    border-radius: 30px;
+    border: 1px solid rgb(255, 90, 126);
+    box-shadow: 0 0 10px 1px rgb(255, 90, 126) inset;
 }
 
 @media (max-width: 960px) {

@@ -110,8 +110,8 @@ function Card (props) {
   return (
     <div className={styles.card}>
       <Link
-        href={`/learn/english/${props.number}`}
-        as={`/learn/english/${props.number}`}
+        href={`/learn/english/chapter${props.number}`}
+        as={`/learn/english/chapter${props.number}`}
       >
         <h1 className={styles.card_number}>{props.number}</h1>
         <h1>{props.title}</h1>
